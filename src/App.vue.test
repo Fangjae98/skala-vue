@@ -1,0 +1,93 @@
+<script setup>
+import SampleOne from './components/test/SampleOne.vue'
+import SampleTwo from './components/test/SampleTwo.vue'
+
+import VHtml from './components/test/VHtml.vue'
+import XssDemo from './components/test/XssDemo.vue'
+import VText from './components/test/VText.vue'
+import VBind from './components/test/VBind.vue'
+import VClassBinding from './components/test/VClassBinding.vue'
+import VStyleBinding from './components/test/VStyleBinding.vue'
+import VShorthand from './components/test/VShorthand.vue'
+import VIfEles from './components/test/VIfEles.vue'
+import VShow from './components/test/VShow.vue'
+import VFor from './components/test/VFor.vue'
+
+import VOnEventHandler from './components/test/VOnEventHandler.vue'
+import VEventObject from './components/test/VEventObject.vue'
+import VEventModifier from './components/test/VEventModifier.vue'
+
+import VModelTwoway from './components/test/VModelTwoway.vue'
+import VFromElementsHandling from './components/test/VFromElementsHandling.vue'
+import VModelModifiers from './components/test/VModelModifiers.vue'
+import VStyle from './components/test/VStyle.vue'
+
+import ReactiveStateRef from './components/test/ReactiveStateRef.vue'
+import ReactiveStateReactive from './components/test/ReactiveStateReactive.vue'
+
+import VComputed from './components/test/VComputed.vue'
+import VWatch from './components/test/VWatch.vue'
+import VMultiSourceWatch from './components/test/VMultiSourceWatch.vue'
+import DeepWatch from './components/test/DeepWatch.vue'
+import WatchEffect from './components/test/WatchEffect.vue'
+
+// import ComponentLifecycle from './components/test/ComponentLifecycle.vue'
+import ComponentLifecycleChild from './components/test/ComponentLifecycleChild.vue'
+
+import PropsEmitsParent from './components/test/PropsEmitsParent.vue'
+import PropsEmitsChild from './components/test/PropsEmitsChild.vue'
+
+import SlotDefaultParent from './components/test/SlotDefaultParent.vue'
+import SlotNamedParent from './components/test/SlotNamedParent.vue'
+import SlotScopedParent from './components/test/SlotScopedParent.vue'
+</script>
+
+<template>
+  <div class="practice-grid">
+    <SampleOne />
+    <SampleTwo />
+
+    <VHtml />
+    <XssDemo />
+    <VText />
+    <VBind />
+    <VClassBinding />
+    <VStyleBinding />
+    <VShorthand />
+    <VIfEles />
+    <VShow />
+    <VFor />
+
+    <VOnEventHandler />
+    <VEventObject />
+    <VEventModifier />
+
+    <VModelTwoway />
+    <VFromElementsHandling />
+    <VModelModifiers />
+    <VStyle />
+
+    <ReactiveStateRef />
+    <ReactiveStateReactive />
+
+    <VComputed />
+    <VWatch />
+    <VMultiSourceWatch />
+    <DeepWatch />
+    <WatchEffect />
+    <!-- <ComponentLifecycle /> -->
+    <ComponentLifecycleChild />
+
+    <PropsEmitsParent />
+    <PropsEmitsChild />
+
+    <SlotDefaultParent />
+    <SlotNamedParent />
+    <SlotScopedParent />
+  </div>
+</template>
+
+<style>
+/* ⚠️ 외부 스타일 파일(예: 버튼 디자인 뭉치)을 이 방 안으로 쏙 가리켜 가져옵니다 */
+@import '@/assets/practice.css';
+</style>

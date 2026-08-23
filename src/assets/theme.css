@@ -1,0 +1,35 @@
+/* src/assets/theme.css */
+/* 기본값(:root)은 낮 팔레트 — JS(sunThemeStore)가 mount 즉시 실시간 태양 고도 기반 값으로
+   덮어쓴다. 인라인 style로 설정되므로 여기 값보다 항상 우선한다 (JS 미실행 시 폴백용). */
+:root {
+  --app-bg: linear-gradient(178deg, #9fd3ef 0%, #cfe9f8 38%, #f4f1e6 100%);
+  --app-hero-bg: linear-gradient(168deg, #7cc3e8 0%, #b9dcf0 46%, #f2e7cd 100%);
+  --app-header-bg: rgba(255, 255, 255, 0.66);
+  --app-card-bg: rgba(255, 255, 255, 0.74);
+  /* --app-card-bg는 JS(sunThemeStore)가 매 위상 전환마다 갱신 — surface는 그 값을 그대로 따라간다 */
+  --app-surface: var(--app-card-bg);
+  --app-chip-bg: rgba(20, 45, 70, 0.06);
+  --app-text: #14212c;
+  --app-text-secondary: rgba(20, 33, 44, 0.62);
+  --app-heading: #0f1a22;
+  --app-accent: #a85a06;
+  --app-border: rgba(20, 45, 70, 0.1);
+  --app-shadow: rgba(16, 40, 70, 0.16);
+  --app-input-bg: rgba(255, 255, 255, 0.8);
+  --app-btn-bg: rgba(255, 255, 255, 0.7);
+  --app-btn-bg-hover: rgba(255, 255, 255, 0.92);
+  --app-btn-border: rgba(20, 45, 70, 0.14);
+}
+
+body {
+  background: var(--app-bg);
+  color: var(--app-text);
+  font-family:
+    'Noto Sans KR',
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    sans-serif;
+  transition: color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
